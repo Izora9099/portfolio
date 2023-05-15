@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+pROJECT SUBMITTED BY
+ Student Name: Ndifon Lemuel Ashu-Mbi
+ Student Matr: FE21A247
+
 ## Available Scripts
 <!--
  Student Name: Ndifon Lemuel Ashu-Mbi
