@@ -27,7 +27,7 @@ return (
 <article className='contact__option'>
 <MdOutlineEmail className='contact__option__icon'/>
 <h4>Email</h4>
-<h5>myEmail@gmail.com</h5>
+<h5>ndifonlemuel@gmail.com</h5>
 <a href='mailto:ndifonlemuel@gmail.com' target='_blank'>send a
 message</a>
 </article>
@@ -36,12 +36,12 @@ message</a>
 <h4>LinkedIn</h4>
 <h5>Profile</h5>
 <a href='https://www.linkedin.com/in/brown-djomo-844b96164/'
-target='_blank'>Tape me on LinkedIn</a>
+target='_blank'>Connect with me on LinkedIn</a>
 </article>
 <article className='contact__option'>
 <BsWhatsapp className='contact__option__icon'/>
 <h4>Whatsapp</h4>
-<h5>Direct message</h5>
+<h5>Or send me a Direct message on whatsapp</h5>
 <a href='https://web.whatsapp.com/send?phone=+237658908619'
 target='_blank'>Whatsapp me</a>
 </article>

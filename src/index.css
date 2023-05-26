@@ -9,11 +9,11 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
+  --color-bg: #0a2647;
+  --color-bg-variant: #144272;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #fff;
+  --color-white: #c0bebe;
   --color-light: rgba(255, 255, 255, 0.6);
   --container-width-lg: 75%; /*size of the container we are going to use on different*/
   --container-width-md: 86%; /*screen size*/
