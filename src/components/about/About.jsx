@@ -1,6 +1,9 @@
 import React from 'react'
 import './About.css'
-import ME from '../../assets/Miss Ajax Complete 1.png'
+import me from '../../assets/Miss Ajax Complete 1.png'
+import { FaAward } from 'react-icons/fa'
+import { FiUsers } from 'react-icons/fi'
+import { VscFolderLibrary } from 'react-icons/vsc'
 const about = () => {
   return (
    <section id="about">
@@ -8,13 +11,33 @@ const about = () => {
     <h2>About Me</h2>
     <div className="container about__container">
       <div className="about__me">
-<div className="about__me-image">
-  <img src="{ME}" alt="" />
-</div>
-      </div>
-      <div className="about__content"></div>
+      <div className="about__me-image">
+<img src={me} alt='my image'/>
     </div>
-   </section>
+      </div>
+      <div className="about__content">
+        <div className="about__cards">
+        <article className="about__card">
+        <FaAward className='about__icon'/>
+        <h5>Experience</h5>
+        <small>3+ Years Work</small>
+        </article> 
+        <article className="about__card">
+        <FiUsers className='about__icon'/>
+        <h5>Clients</h5>
+        <small>288+ Worldwide</small>
+        </article>
+          <article className="about__card">
+        <VscFolderLibrary className='about__icon'/>
+        <h5>Projects</h5>
+        <small>30+ Completed</small>
+      </article> 
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus autem harum tempora asperiores quod natus modi in tempore nam quaerat quae quo quia temporibus rerum, dolorem labore distinctio! Molestias, temporibus.</p>
+    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+    </div>
+    </div>
+      </section>
   )
 }
 
