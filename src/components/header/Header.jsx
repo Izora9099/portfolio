@@ -10,7 +10,7 @@ return (
 <header>
 <div className='container header__container'>
 <h5>Hello I'm</h5>
-<h1>Ndifon Lemuel Ashu-Mbi</h1>
+<h1>Atong Terry Taku Leke</h1>
 <h5 className='text-light'>Software Engineer </h5>
 <CTA/>
 <HeaderSocial/>
