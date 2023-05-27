@@ -1,8 +1,8 @@
 import React from 'react'
 import './About.css'
-function about() {
+const about = () => {
   return (
-    <div>about</div>
+   <section id="about">About</section>
   )
 }
 

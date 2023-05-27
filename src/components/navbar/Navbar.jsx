@@ -1,12 +1,23 @@
 import React from 'react'
 import './navbar.css'
-function Navbar() {
+import {AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineUser} from 'react-icons/ai'
+import {AiOutlineBook} from 'react-icons/ai'
+import {RiServiceLine} from 'react-icons/ri'
+import {BiMessageSquareDetail} from 'react-icons/bi'
+
+
+const Navbar = () => {
   return (
-   <section className="navbar">
-    <ul>
-     
-    </ul>
-   </section>
+  
+   <nav>
+    <a href="#"><AiOutlineHome/></a>
+    <a href="#about"><AiOutlineUser/></a>
+    <a href="#experience"><AiOutlineBook/></a>
+    <a href="#services"><RiServiceLine/></a>
+    <a href="#contact"><BiMessageSquareDetail/></a>
+   </nav>
+   
   )
 }
 
