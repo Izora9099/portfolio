@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import ME from '../../assets/changer.png'
+import ME from '../../assets/Miss Ajax Complete 1.png'
 const about = () => {
   return (
    <section id="about">
@@ -9,7 +9,7 @@ const about = () => {
     <div className="container about__container">
       <div className="about__me">
 <div className="about__me-image">
-  <img src="" alt="" />
+  <img src="{ME}" alt="" />
 </div>
       </div>
       <div className="about__content"></div>
