@@ -16,6 +16,7 @@ import me11 from '../../assets/01.png'
 const Portfolio = () => {
   return (
     <section class="portfolio" id="portfolio">
+      <h5>See My Work</h5>
     <h2 class="heading">Latest <span>Projects</span></h2>
     <div class="portfolio-container">
       <div class="portfolio-box">
