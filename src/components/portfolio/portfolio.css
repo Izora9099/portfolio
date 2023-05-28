@@ -26,7 +26,6 @@
   overflow: hidden;
   display: flex;
 }
-
 .portfolio-box img {
   width: 100%;
   transition: 0.5s ease;

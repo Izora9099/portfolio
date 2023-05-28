@@ -1,11 +1,10 @@
-
 :root {
   --bg-color: #1f1f38;
   --second-bg-color: #2c2c6c;
   --text-color: #fff;
   --main-color: rgba(77, 181, 255, 0.4);
 }
-.services-container{
+.services-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -36,12 +35,13 @@ change all this color craze, find ya better color pallete and use it for the web
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
-  
 }
 
 .services-container .services-box:hover {
   border-color: var(--main-color);
   transform: scale(1.02);
+  background: transparent;
+  cursor: default;
 }
 
 .services-box i {
