@@ -8,7 +8,9 @@
       {
         "ignore": [
           "scroll-behavior",
-          "backdrop-filter"
+          "backdrop-filter",
+          "aspect-ratio",
+          "user-select"
         ]
       }
     ]
