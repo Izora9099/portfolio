@@ -1,7 +1,6 @@
 import React from 'react'
-import { BsLinkedin } from 'react-icons/bs';
-import {FaGithub} from 'react-icons/fa'
-import {FaFacebookF} from 'react-icons/fa'
+import {FaInstagramSquare} from 'react-icons/fa'
+import {BsPinterest} from 'react-icons/bs'
 import { CgTwitter } from "react-icons/cg";
 
 import './footer.css'
@@ -9,7 +8,7 @@ const Footer = () => {
     return (
       <div className="footer__container">
         <a href="#" className="footer__logo">
-          Brown Alden
+          Izora Quinn
         </a>
 
         <ul className="permalinks">
@@ -37,22 +36,20 @@ const Footer = () => {
         </ul>
 
         <div className="footer__media">
-          <a href="https://linkedin.com" target="blank">
-            <BsLinkedin />
+         
+          <a href="https://instagram.com/izoragraphics" >
+            <FaInstagramSquare />
           </a>
-          <a href="https://github.com" target="blank">
-            <FaGithub />
+          <a href="https://pinterest.com/izoragraphics" >
+            <BsPinterest />
           </a>
-          <a href="https://facebook.com" target="blank">
-            <FaFacebookF />
-          </a>
-          <a href="https://twitter.com" target="blank">
+          <a href="https://twitter.com/izoragraphics" >
             <CgTwitter />
           </a>
         </div>
 
         <div className="copyRight">
-            <h3>@copyright BD 2023</h3>
+            <h3>@copyright IQ 2023</h3>
         </div>
       </div>
     );
