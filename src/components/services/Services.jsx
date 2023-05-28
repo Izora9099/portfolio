@@ -2,7 +2,7 @@ import React from 'react'
 import './services.css'
 const Services = () => {
   return (
-    <div class="services" id="services">
+    <section class="services" id="services">
       <h2 class="heading">Our <span>Services</span></h2>
       <div class="services-container">
         <div class="services-box">
@@ -36,7 +36,7 @@ const Services = () => {
           <a href="#" class="btn">Read More</a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -124,6 +124,37 @@ const Portfolio = () => {
           <a href="#"><i class="bx bx-link-external"></i></a>
         </div>
       </div>
+      <div class="portfolio-box">
+      <img src={me9} alt='my image'/>
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur axime sed error impedit
+            nisi quas.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div><div class="portfolio-box">
+      <img src={me10} alt='my image'/>
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur axime sed error impedit
+            nisi quas.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div><div class="portfolio-box">
+      <img src={me11} alt='my image'/>
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur axime sed error impedit
+            nisi quas.
+          </p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
     </div>
     
    
