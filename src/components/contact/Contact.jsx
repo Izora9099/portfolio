@@ -1,16 +1,15 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
-import {AiOutlineLinkedin} from 'react-icons/ai'
+import {BsPinterest} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import {useRef} from 'react'
-//import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 const Contact = () => {
 const form = useRef();
 const sendEmail = (e) => {
 e.preventDefault();
-//emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current,
-//'EmSdUNQzQuxkUqGWx')
+emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current,'EmSdUNQzQuxkUqGWx')
 e.target.reset()
 .then((result) => {
 console.log(result.text)
@@ -27,16 +26,16 @@ return (
 <article className='contact__option'>
 <MdOutlineEmail className='contact__option__icon'/>
 <h4>Email</h4>
-<h5>ndifonlemuel@gmail.com</h5>
-<a href='mailto:ndifonlemuel@gmail.com' target='_blank'>send a
+<h5>izoragraphics@gmail.com</h5>
+<a href='mailto:izoragraphics@gmail.com' target='_blank'>send a
 message</a>
 </article>
 <article className='contact__option'>
-<AiOutlineLinkedin className='contact__option__icon'/>
-<h4>LinkedIn</h4>
+<BsPinterest className='contact__option__icon'/>
+<h4>Pinterest</h4>
 <h5>Profile</h5>
-<a href='https://www.linkedin.com/in/brown-djomo-844b96164/'
-target='_blank'>Connect with me on LinkedIn</a>
+<a href='https://pinterest.com/izoragraphics'
+target='_blank'>Connect with me on Pinterest</a>
 </article>
 <article className='contact__option'>
 <BsWhatsapp className='contact__option__icon'/>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './portfolio.css'
+import {FaExternalLinkAlt} from 'react-icons/fa'
 import me from '../../assets/Fury.png'
 import me1 from '../../assets/B-W.png'
 import me2 from '../../assets/Cool girl.png'
@@ -22,138 +23,138 @@ const Portfolio = () => {
       <div class="portfolio-box">
       <img src={me} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me1} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me2} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me3} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me4} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me5} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
       <div class="portfolio-box">
       <img src={me6} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p class="writeup">
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me7} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
 
       <div class="portfolio-box">
       <img src={me8} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
       <div class="portfolio-box">
       <img src={me9} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div><div class="portfolio-box">
       <img src={me10} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div><div class="portfolio-box">
       <img src={me11} alt='my image'/>
         <div class="portfolio-layer">
-          <h4>Web Design</h4>
+          <h4>Digital Art</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur axime sed error impedit
             nisi quas.
           </p>
-          <a href="#"><i class="bx bx-link-external"></i></a>
+          <a href="#"><FaExternalLinkAlt/></a>
         </div>
       </div>
     </div>
