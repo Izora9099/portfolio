@@ -1,7 +1,8 @@
 import React from 'react'
 import {FaInstagramSquare} from 'react-icons/fa'
 import {BsPinterest} from 'react-icons/bs'
-import { CgTwitter } from "react-icons/cg";
+import { FaTwitterSquare } from "react-icons/fa";
+import {SiDeviantart} from "react-icons/si"
 
 import './footer.css'
 const Footer = () => {
@@ -36,7 +37,9 @@ const Footer = () => {
         </ul>
 
         <div className="footer__media">
-         
+        <a href="https://www.deviantart.com/izoraquinn" >
+            <SiDeviantart />
+          </a>
           <a href="https://instagram.com/izoragraphics" >
             <FaInstagramSquare />
           </a>
@@ -44,7 +47,7 @@ const Footer = () => {
             <BsPinterest />
           </a>
           <a href="https://twitter.com/izoragraphics" >
-            <CgTwitter />
+            <FaTwitterSquare />
           </a>
         </div>
 
