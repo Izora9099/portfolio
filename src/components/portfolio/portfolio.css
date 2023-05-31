@@ -8,8 +8,8 @@
 }
 /*this is me trying to make the imagese in the portfolio container squared*/
 .portfolio-container img {
-  width: 600px;
-  height: 410px;
+  width: 200px;
+  height: 210px;
 }
 
 .portfolio-container {
@@ -68,13 +68,13 @@
 }
 
 .portfolio-layer h4 {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--color-primary);
 }
 
 .portfolio-layer p {
-  font-size: 1rem;
-  margin: 0.3rem 0 1rem;
+  font-size: 0.8rem;
+  margin: 0.3rem 0 0.5rem;
 }
 
 .portfolio-layer a {
@@ -85,9 +85,18 @@
   height: 5rem;
   background: var(--text-color);
   border-radius: 50%;
+  margin-bottom: 0;
 }
 
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: black; /*need work and the react icon pack for the links*/
+
+ .see-more{
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  
+}
+.see-more:hover{
+  color: var(--text-color);
+  transition: .2s ease-in-out;
 }

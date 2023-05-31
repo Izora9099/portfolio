@@ -31,9 +31,13 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-            </a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
 
@@ -45,9 +49,13 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-            </a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
 
@@ -59,14 +67,18 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-            </a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
-</div>
-<br />
-<h3 className='section-head'>Digital Art</h3>
+      </div>
+      <br />
+      <h3 className='section-head'>Digital Art</h3>
       <div class='portfolio-container'>
         <div class='portfolio-box'>
           <img src={me} alt='my image' />
@@ -76,11 +88,13 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-              
-            </a>
-            <a href="#" className="see-more">See More!</a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
 
@@ -92,9 +106,13 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-            </a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
 
@@ -106,15 +124,16 @@ const Portfolio = () => {
               Lorem, ipsum dolor sit amet consectetur axime sed error impedit
               nisi quas.
             </p>
-            <a href='#'>
-              <FaExternalLinkAlt />
-            </a>
+            <div className='see-more'>
+              <a href='#'>
+                <FaExternalLinkAlt />
+              </a>
+              <br />
+              See More!
+            </div>
           </div>
         </div>
-</div>
-
-        
-      
+      </div>
     </section>
   );
 };

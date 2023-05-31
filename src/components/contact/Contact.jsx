@@ -3,6 +3,7 @@ import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsPinterest} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
+import { FaArrowDown} from 'react-icons/fa'
 import {useRef} from 'react'
 import emailjs from 'emailjs-com'
 const Contact = () => {
@@ -45,15 +46,32 @@ target='_blank'>Connect with me on Pinterest</a>
 target='_blank'>Whatsapp me</a>
 </article>
 </div>
+
+
+
+
 <form ref={form} onSubmit={sendEmail}>
 <input type="text" name='name' placeholder='full name' required/>
 <input type="email" name='email' placeholder='your email' required/>
 <textarea name="message" id="message" cols="30" rows="10"
 placeholder='your message' required></textarea>
 <button type="submit" className='btn btn-primary'>send message</button>
-</form>
+
+
+<div>
+<a href='#contact' className='scroll_down'>
+<FaArrowDown /> 
+</a>
 </div>
+
+</form>
+
+</div>
+
 </section>
+
+
+
 )
 }
 export default Contact
