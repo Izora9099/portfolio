@@ -1,6 +1,7 @@
 import React from 'react'
 import './services.css'
-const Services = () => {
+
+export const Services = () => {
   return (
     <section class="services" id="services">
       <h5>Services I Offer</h5>
@@ -38,7 +39,15 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
+  /*
+    <section id="services">
+      <h5>What i offer</h5>
+      <h2>Services</h2>
+      <div className="container services__container">
+        <ListServices />
+      </div>
+    </section>*/
+  );
 }
-
-export default Services
+export default Services;
+  
