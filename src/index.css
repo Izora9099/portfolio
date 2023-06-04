@@ -9,12 +9,12 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
-  --color-primary: #4db5ff;
-  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-bg: #111224;
+  --color-bg-variant: #161736;
+  --color-primary: #42578a;
+ --color-primary-variant: rgba(39, 119, 177, 0.692);
   --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.6);
+  --color-light: #969696;
   --container-width-lg: 75%; /*size of the container we are going to use on different*/
   --container-width-md: 86%; /*screen size*/
   --container-width-sm: 90%;
@@ -42,21 +42,27 @@ h3,
 h4,
 h5 {
   font-weight: 500;
+  
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 section {
   margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 section > h2,
 section > h5 {
   text-align: center;
   color: var(--color-light);
+ 
 }
 section > h2 {
   color: var(--color-primary);
   margin-bottom: 3rem;
+}
+section>h5{
+  font-size: 2rem;
 }
 .text-light {
   color: var(--color-light);

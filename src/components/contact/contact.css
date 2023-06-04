@@ -51,6 +51,7 @@ textarea {
   border: 1px solid var(--color-primary-variant);
   resize: none;
   color: var(--color-white);
+
 }
 .scroll_down{
   font-size: 3rem;

@@ -11,9 +11,9 @@ const about = () => {
     <h2>About Me</h2>
     <div className="container about__container">
       <div className="about__me">
-      <div className="about__me-image">
-<img src={me} alt='my image'/>
-    </div>
+       <div className="about__me-image">
+       <img src={me} alt='my image'/>
+        </div>
       </div>
       <div className="about__content">
         <div className="about__cards">
@@ -33,8 +33,14 @@ const about = () => {
         <small>30+ Completed</small>
       </article> 
     </div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus autem harum tempora asperiores quod natus modi in tempore nam quaerat quae quo quia temporibus rerum, dolorem labore distinctio! Molestias, temporibus.</p>
-    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+    <p>
+    Hi, I'm Izora Quinn, a digital artist, content creator, and front/back-end web designer.
+     I specialize in creating visually stunning & engaging content across various media,
+      from digital art to web design. With a passion for creativity and a commitment
+       to qualitythat exceed my clients' expectations. My portfolio 
+       showcases my diverse skillset, and I look forward to the opportunity to work with you.
+       </p>
+    <a href="#contact" className='btn btn-primary btn1'>Let's Talk</a>
     </div>
     </div>
       </section>

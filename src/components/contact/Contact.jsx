@@ -40,8 +40,8 @@ target='_blank'>Connect with me on Pinterest</a>
 </article>
 <article className='contact__option'>
 <BsWhatsapp className='contact__option__icon'/>
-<h4>Whatsapp</h4>
-<h5>Or send me a Direct message on whatsapp</h5>
+<h4>WhatsApp</h4>
+<h5>Directly message</h5>
 <a href='https://web.whatsapp.com/send?phone=+237658908619'
 target='_blank'>Whatsapp me</a>
 </article>
@@ -55,14 +55,9 @@ target='_blank'>Whatsapp me</a>
 <input type="email" name='email' placeholder='your email' required/>
 <textarea name="message" id="message" cols="30" rows="10"
 placeholder='your message' required></textarea>
-<button type="submit" className='btn btn-primary'>send message</button>
+<button type="submit" className='btn btn-primary btn1'>send message</button>
 
 
-<div>
-<a href='#contact' className='scroll_down'>
-<FaArrowDown /> 
-</a>
-</div>
 
 </form>
 
