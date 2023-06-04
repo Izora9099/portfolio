@@ -23,21 +23,21 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>CSS3+Flexbox</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Mid Level</small>
               </article>
             </div>
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>JavaScript</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Amateur</small>
               </article>
             </div>
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>React</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Amateur</small>
               </article>
             </div>
           </div>
@@ -49,14 +49,14 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>Digital Arts</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Professional</small>
               </article>
             </div>
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>Enlargemnts</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Professional</small>
               </article>
             </div>
            
@@ -65,7 +65,7 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon'/>
                 <h4>Digital Cartooning</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Mid Level</small>
               </article>
             </div>
           </div>
