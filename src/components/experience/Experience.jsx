@@ -15,7 +15,7 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>HTML</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Proficient</small>
               </article>
             </div>
             <div>
@@ -23,14 +23,14 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>CSS3+Flexbox</h4>
-                <small className='text-light'>Mid Level</small>
+                <small className='text-light'>Proficient</small>
               </article>
             </div>
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>JavaScript</h4>
-                <small className='text-light'>Amateur</small>
+                <small className='text-light'>Advanced Beginner</small>
               </article>
             </div>
             <div>
@@ -49,14 +49,14 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>Digital Arts</h4>
-                <small className='text-light'>Professional</small>
+                <small className='text-light'>Expert</small>
               </article>
             </div>
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>Enlargemnts</h4>
-                <small className='text-light'>Professional</small>
+                <small className='text-light'>Expert</small>
               </article>
             </div>
            
@@ -65,7 +65,35 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon'/>
                 <h4>Digital Cartooning</h4>
-                <small className='text-light'>Mid Level</small>
+                <small className='text-light'>Competent</small>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div className='experience__backend'>
+          <h3> Content Creation </h3>
+          <div className='experience__content'>
+            <div>
+              <article className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon' />
+                <h4>Author</h4>
+                <small className='text-light'>Expert</small>
+              </article>
+            </div>
+            <div>
+              <article className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon' />
+                <h4>AE</h4>
+                <small className='text-light'>Expert</small>
+              </article>
+            </div>
+           
+            <div>
+              {" "}
+              <article className='experience__details'>
+                <BsPatchCheckFill className='experience__details-icon'/>
+                <h4>Digital Cartooning</h4>
+                <small className='text-light'>Competent</small>
               </article>
             </div>
           </div>
@@ -78,15 +106,15 @@ const experience = () => {
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon' />
                 <h4>Node Js</h4>
-                <small className='text-light'>Experienced</small>
+                <small className='text-light'>Beginner</small>
               </article>
             </div>
 
             <div>
               <article className='experience__details'>
                 <BsPatchCheckFill className='experience__details-icon'/>
-                <h4>My SQL</h4>
-                <small className='text-light'>Experienced</small>
+                <h4>SQL</h4>
+                <small className='text-light'>Competent</small>
               </article>
             </div>
           </div>

@@ -102,6 +102,6 @@
   display: block;
 }
 .see-more:hover {
-  color: var(--text-color);
+  color: var(--primary-variant);
   transition: 0.2s ease-in-out;
 }

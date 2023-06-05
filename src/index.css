@@ -9,10 +9,10 @@
   text-decoration: none;
 }
 :root {
-  --color-bg: #111224;
-  --color-bg-variant: #161736;
-  --color-primary: #42578a;
- --color-primary-variant: rgba(39, 119, 177, 0.692);
+  --color-bg: #181818;
+  --color-bg-variant: #282828;
+  --color-primary: #f3f3f3;
+ --color-primary-variant: #6d7885;
   --color-white: #fff;
   --color-light: #969696;
   --container-width-lg: 75%; /*size of the container we are going to use on different*/
@@ -81,7 +81,7 @@ a:hover {
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-light);
   transition: var(--transition);
 }
 .btn:hover {
@@ -90,7 +90,7 @@ a:hover {
   border-color: transparent;
 }
 .btn-primary {
-  background: var(--color-primary);
+  background: var(--color-light);
   color: var(--color-bg);
 }
 img {
