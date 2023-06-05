@@ -8,9 +8,13 @@ import './footer.css'
 const Footer = () => {
     return (
       <div className="footer__container">
-        <a href="#" className="footer__logo">
-          Izora Quinn
-        </a>
+        
+        <a href="#" className="footer__logo"><div>
+          <p className='footer__logo'>IZORAGRAPHICS</p>
+          </div>
+          <div><p className='footer__logo1'>Your Satisfaction, Our Priority</p>
+          
+          </div></a>
 
         <ul className="permalinks">
           <li>
@@ -35,7 +39,7 @@ const Footer = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-
+        
         <div className="footer__media">
         <a href="https://www.deviantart.com/izoraquinn" >
             <SiDeviantart />
@@ -52,8 +56,9 @@ const Footer = () => {
         </div>
 
         <div className="copyRight">
-            <h3>@copyright IQ 2023</h3>
+        <h3>&copy; 2023 Izoragraphics. All rights reserved.</h3>
         </div>
+        
       </div>
     );
 }

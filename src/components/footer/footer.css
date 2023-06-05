@@ -2,12 +2,18 @@
   background-color: var(--color-primary-variant);
   margin-top: 2rem;
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
   font-size: 0.9rem;
 }
 
 .footer__logo {
   font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.footer__logo1{
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
@@ -53,7 +59,7 @@
 }
 
 .copyRight {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   color: var(--color-bg);
 }
 
