@@ -71,8 +71,12 @@
     flex-direction: column;
     gap: 1.5rem;
   }
+  .footer__container{
+    font-size: smaller;
+  }
 
   .footer__media {
     margin-bottom: 2.6rem;
   }
+  
 }

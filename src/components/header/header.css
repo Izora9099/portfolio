@@ -64,4 +64,7 @@ specific screen*/
   .scroll__down {
     display: none;
   }
+  a{
+    display: none;
+  }
 }
