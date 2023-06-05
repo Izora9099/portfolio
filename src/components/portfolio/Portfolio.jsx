@@ -15,7 +15,19 @@ import me10 from "../../assets/happy mothers day display 3.png";
 import me11 from "../../assets/01.png";
 import me12 from "../../assets/clean.png";
 
+import img1 from "../../assets/img1.png";
+import img2 from "../../assets/img2.png";
+import img3 from "../../assets/img3.png";
+import img5 from "../../assets/img5.png";
+import img6 from "../../assets/img6.png";
+import img7 from "../../assets/img7.png";
+import img8 from "../../assets/img8.png";
+import img9 from "../../assets/img9.png";
+
+
 const Portfolio = () => {
+   
+
   return (
     <section class='portfolio' id='portfolio'>
       <h5>See My Work</h5>
@@ -158,6 +170,8 @@ const Portfolio = () => {
             <div className='see-more'>See More!</div>
           </div>
       </div>
+      
+    
        </div>
        
        
