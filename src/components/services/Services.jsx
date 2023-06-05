@@ -4,155 +4,149 @@ import { MdOutlineLibraryAddCheck } from "react-icons/md";
 
 export const Services = () => {
   return (
-    <section id="services">
+    <section id='services'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
-      <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
+      <div className='container services__container'>
+        <article className='service'>
+          <div className='service__head'>
             <h3>Content Creation</h3>
           </div>
 
-          <ul className="service__list">
+          <ul className='service__list'>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
                 Creating content for your social media pages like TikTok,
                 Instagram, Facebook
-                   </p>
+              </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>I create content that captivates and engages.</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
                 I can help you reach your target audience with engaging content.
               </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>I'm a creative thinker who can come up with original ideas.</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p> Proficient in writing and editing across various mediums</p></li>
-                            <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>Knowledge of storytelling and narrative structure</p></li>
-              <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>Ability to create engaging content tailored to specific audiences</p></li>
-              <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-             
-<p>Experience with social media and marketing materials
-</p>
-</li>
-              
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p> Proficient in writing and editing across various mediums</p>
+            </li>
+            <li>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Knowledge of storytelling and narrative structure</p>
+            </li>
+            <li>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>
+                Ability to create engaging content tailored to specific
+                audiences
+              </p>
+            </li>
+            <li>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Experience with social media and marketing materials</p>
+            </li>
           </ul>
         </article>
         {/*END OF CONTENT CREATION*/}
 
-        <article className="service">
-          <div className="service__head">
+        <article className='service'>
+          <div className='service__head'>
             <h3>Web Development</h3>
           </div>
 
-          <ul className="service__list">
+          <ul className='service__list'>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>I build websites that are both beautiful and functional.</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
                 I'm a web developer who loves to create user-friendly
                 experiences.
               </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>I'm passionate about using technology to solve problems.</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>
-              Proficient in HTML, CSS, and JavaScript</p>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Proficient in HTML, CSS, and JavaScript</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>
-              Knowledge of UI/UX design principles </p>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Knowledge of UI/UX design principles </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
-              Familiarity with responsive design and cross-browser compatibility
-</p>
+                Familiarity with responsive design and cross-browser
+                compatibility
+              </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p   >    
-
-Ability to collaborate with clients and stakeholders
- </p>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Ability to collaborate with clients and stakeholders</p>
             </li>
           </ul>
         </article>
 
-
         {/*END OF WEB DEVELOPMENT*/}
 
-        <article className="service">
-          <div className="service__head">
+        <article className='service'>
+          <div className='service__head'>
             <h3>Digital Art</h3>
           </div>
- 
-          <ul className="service__list">
+
+          <ul className='service__list'>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p> Proficient in digital cartooning and digital painting</p>
-           </li>
-            <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>Expertise in framing pictures and professional picture enhancement</p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-           <p>
-Knowledge of cutting-edge software and tools</p>
-        </li>
-            <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
-Collaborated with clients to bring their vision to life
-</p>
+                Expertise in framing pictures and professional picture
+                enhancement
+              </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Knowledge of cutting-edge software and tools</p>
+            </li>
+            <li>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>Collaborated with clients to bring their vision to life</p>
+            </li>
+            <li>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
-Delivered high-quality work that exceeded client expectation
- </p>
+                Delivered high-quality work that exceeded client expectation
+              </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
               <p>
-Worked on a variety of projects, from small-scale to large-scale
-</p>
+                Worked on a variety of projects, from small-scale to large-scale
+              </p>
             </li>
             <li>
-              <MdOutlineLibraryAddCheck className="service__list-icon" />
-              <p>           
-Attention to detail and ability to work to specific client needs
-
-</p>
+              <MdOutlineLibraryAddCheck className='service__list-icon' />
+              <p>
+                Attention to detail and ability to work to specific client needs
+              </p>
             </li>
-           
-
-
           </ul>
         </article>
         {/*END OF PHOTOGRAPHY*/}
@@ -162,59 +156,3 @@ Attention to detail and ability to work to specific client needs
 };
 
 export default Services;
-
-
-
-/*
-import React from 'react'
-import './services.css'
-
-export const Services = () => {
-  return (
-    <section class="services" id="services">
-      <h5>Services I Offer</h5>
-      <h2 class="heading">Our <span>Services</span></h2>
-      <div class="services-container">
-        <div class="services-box">
-       
-          <h3> Front-End Web Design</h3>
-          <p>
-          As a front-end web designer, I use my expertise in HTML, CSS, and JavaScript to create engaging and user-friendly websites. I am passionate about creating designs that are both visually appealing and functional, and I stay up-to-date with the latest trends and best practices. I have experience working on a variety of projects, from simple landing pages to complex e-commerce sites, and I am skilled at collaborating with clients to bring their vision to life.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          
-          <h3> Back-End Web Design</h3>
-          <p>In addition to front-end web design, I also have experience in back-end web design. I am proficient in programming languages such as PHP and Python and have experience working with databases and server-side scripting. I am dedicated to creating websites that are not only visually appealing but also efficient, secure, and scalable. I also have experience with website maintenance, ensuring that websites are always up-to-date and running smoothly.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Graphic Design</h3>
-          <p>
-          I have extensive experience in digital art, including digital cartooning and digital painting. I have a keen eye for detail and use cutting-edge software to create visually stunning artwork that meets the specific needs of each client. Whether it's designing logos, creating illustrations, or developing marketing materials, I am committed to delivering work that stands out from the crowd. I also specialize in framing pictures and professional picture enhancement, ensuring that each image is optimized for its intended purpose.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="services-box">
-          
-          <h3>Content Creation</h3>
-          <p>
-          As a content creator, I am passionate about storytelling and bringing ideas to life. I have experience as a novel writer and author, and I am skilled at creating engaging content across a variety of mediums. Whether it's writing blog posts, creating social media content, or developing marketing materials, I have a keen understanding of what makes content successful. I am committed to delivering work that is not only high-quality but also tailored to the unique needs of each client.</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-  /*
-    <section id="services">
-      <h5>What i offer</h5>
-      <h2>Services</h2>
-      <div className="container services__container">
-        <ListServices />
-      </div>
-    </section>*/
- /* );
-}/*
-export default Services;
-  */
