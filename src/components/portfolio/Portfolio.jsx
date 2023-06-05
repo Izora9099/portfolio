@@ -20,52 +20,6 @@ import me9 from "../../assets/BEAUTY QUEEN2.png";
 import me10 from "../../assets/happy mothers day display 3.png";
 import me11 from "../../assets/01.png";
 import me12 from "../../assets/Raindrops.png";
-
-const data = [
-  {
-    id: 1,
-    image: IMG1,
-    title: "Crypto Currency Dashboard & Financial Visualisation",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 2,
-    image: IMG2,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Maintaining tasks and tracking progress",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "Charts template & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Charts template & infograohics in Figma ",
-    github: "https://github.com",
-    demo: "https://dribbble.com/Alien_pixels",
-  },
-];
-
 const Portfolio = () => {
   return (
     <section id="portfolio">
