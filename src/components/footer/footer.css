@@ -40,7 +40,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer__media a {
@@ -59,7 +59,7 @@
 }
 
 .copyRight {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--color-bg);
 }
 
