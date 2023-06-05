@@ -19,7 +19,7 @@ import me8 from "../../assets/BABY DISPLAY.png";
 import me9 from "../../assets/BEAUTY QUEEN2.png";
 import me10 from "../../assets/happy mothers day display 3.png";
 import me11 from "../../assets/01.png";
-import me12 from "../../assets/clean.png";
+import me12 from "../../assets/Raindrops.png";
 
 const data = [
   {
