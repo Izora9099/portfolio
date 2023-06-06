@@ -42,8 +42,7 @@ padding-bottom: 0;
   padding: 0rem 1.5rem 1.5rem 1.5rem;
 }
 .scroll__down {
-  position: absolute;
-  right: -2rem;
+    right: -2rem;
   bottom: 5rem;
   font-weight: 0.9rem;
   font-size: 7rem;
@@ -58,7 +57,7 @@ specific screen*/
 }
 @media screen and(max-width:600px) {
   header {
-    height: 100vh;
+    height: auto;
   }
   .header__social,
   .scroll__down {
