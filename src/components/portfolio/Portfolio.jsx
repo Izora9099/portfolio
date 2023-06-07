@@ -133,7 +133,7 @@ export const Portfolio = () => {
                 <div className='portfolio__item__cta'>
                   <a
                     href={seemore}
-                    className='see-more btn ctn'
+                    className='see-more btn'
                     target='_blank'
                     rel='noreferrer'
                   >
