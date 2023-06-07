@@ -1,15 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/img1.png'
-import IMG2 from '../../assets/img2.png'
-import IMG3 from '../../assets/img3.png'
-import IMG4 from '../../assets/img4.png'
-import IMG5 from '../../assets/img5.png'
-import IMG6 from '../../assets/img6.png'
 import me from '../../assets/Fury.png'
 import me1 from '../../assets/B-W.png'
 import me2 from '../../assets/Cool girl.png'
-import me3 from '../../assets/Raindrops.png'
+import me3 from '../../assets/01.png'
 import me4 from '../../assets/Shawty.png'
 import me5 from '../../assets/MY CRUSH DISPLAY 2.png'
 import me6 from '../../assets/photo_2023-03-26_10-57-34.jpg'
@@ -17,120 +11,135 @@ import me7 from '../../assets/Ms Ajax.png'
 import me8 from '../../assets/BABY DISPLAY.png'
 import me9 from '../../assets/BEAUTY QUEEN2.png'
 import me10 from '../../assets/happy mothers day display 3.png'
-import me11 from '../../assets/01.png'
+import me11 from '../../assets/Raindrops.png'
 import me12 from '../../assets/Raindrops.png'
-import ListPortfolio from './listPortfolio'
+
 export const Portfolio = () => {
   const portfolioContent = [
     {
-      image: me,
-      seemore: '#',
       id: 1,
+      image: me,
       title: 'Project1',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me1,
-      seemore: '#',
       id: 2,
+      image: me1,
+
       title: 'Project2',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me2,
-      seemore: '#',
       id: 3,
+      image: me2,
+
       title: 'Project3',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me3,
-      seemore: '#',
       id: 4,
+      image: me3,
+
       title: 'Project4',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me4,
-      seemore: '#',
       id: 5,
+      image: me4,
+
       title: 'Project5',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me5,
-      seemore: '#',
       id: 6,
+      image: me5,
+
       title: 'Project6',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me6,
-      seemore: '#',
       id: 7,
+      image: me6,
+
       title: 'Project7',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me7,
-      seemore: '#',
       id: 8,
+      image: me7,
+
       title: 'Project8',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me8,
-      seemore: '#',
       id: 9,
+      image: me8,
+
       title: 'Project9',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me9,
-      seemore: '#',
       id: 10,
+      image: me9,
+
       title: 'Project10',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me10,
-      seemore: '#',
       id: 11,
+      image: me10,
+
       title: 'Project11',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     },
     {
-      image: me11,
-      seemore: '#',
       id: 12,
+      image: me11,
+
       title: 'Project12',
-      content: ' Transform your space with captivating digital art'
+      content: ' Transform your space with captivating digital art',
+      seemore: '#'
     }
   ]
   return (
     <section id='portfolio'>
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
-      <ListPortfolio />
+
       <div class='portfolio-container'>
-        {portfolioContent.map((content, id) => {
+        {portfolioContent.map(({ id, image, title, content, seemore }) => {
           return (
             <div className='portfolio-box'>
-              <article key={id} className='portfolio-layer'>
+              <article key={id} className=''>
                 <div className='portfolio__item__image'>
-                  <img src={content.image} alt=' one' className='portImage' />
+                
+
+                  <img src={image} alt={title} className='portImage' />
                 </div>
-                <h3> {content.title} </h3>
-                <p>{content.content}</p>
+                <div className="portfolio-layer">
+                <h3> {title} </h3>
+                <p>{content}</p>
                 <div className='portfolio__item__cta'>
                   <a
-                    href={content.seemore}
+                    href={seemore}
                     className='see-more btn ctn'
                     target='_blank'
                     rel='noreferrer'
                   >
                     See More!
                   </a>
+                </div>
                 </div>
               </article>
             </div>
