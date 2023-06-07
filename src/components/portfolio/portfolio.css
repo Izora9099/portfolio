@@ -26,17 +26,10 @@
   overflow: hidden;
   display: flex;
 }
-/*got a problem with image sizes*/
-.portfolio-box img {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-}
 
 .portfolio-box:hover img {
   transform: scale(1.1);
 }
-
 .portfolio-box .portfolio-layer {
   position: absolute;
   bottom: 0;
