@@ -33,13 +33,6 @@ padding-bottom: 0;
 .header__social > a{
   font-size: 2rem;
 }
-.header__social::after{
-  content: '';
-  width: 1px;
-  height: 2rem;
-  background: var(--color-primary);
-}
-
 .my_image{
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
