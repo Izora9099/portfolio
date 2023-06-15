@@ -79,7 +79,10 @@ img{
   font-size: 1rem;
   margin: 0.3rem 0 0 0;
 }
-
+.portfolio-layer > image{
+  width: 300px;
+  height: 350px;
+}
 .btn {
   width: max-content;
   display: inline-block;
