@@ -22,30 +22,30 @@ export const Testimonial = () => {
     {
       id: 1,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+     "Izoragraphics you're the best man! The work you did for me was impeccable and my mom loved her mother's day gift so very much.",
       avatar: AV1,
-      Cname: "Client 1",
+      Cname: "Rozay Oz",
     },
     {
       id: 2,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+      "You took my reservations against digital art and shattered them in pieces. Your work is the absolute best and I look forward to working extensively with you in the years to come",
       avatar: AV2,
-      Cname: "Client 2",
+      Cname: "Eliza Fops",
     },
     {
       id: 3,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+      " I have just one word- EPIC! That's all I can say. In any case, I look forward to working with you again soon ",
       avatar: AV3,
-      Cname: "Client 3",
+      Cname: "Duesen-Berry",
     },
     {
       id: 4,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+      "The digital art was amazing dude. I honestly didn't think it would be that good. Thank you so very much, Look forward to more paintings from you!",
       avatar: AV4,
-      Cname: "Client 4",
+      Cname: "Terry Reezy",
     },
   ];
   return (
