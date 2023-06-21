@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import me from '../../assets/Fury.png'
+import me from '../../assets/OLPWRZ1;lkjhgf.png'
 import me1 from '../../assets/B-W.png'
 import me2 from '../../assets/Cool girl.png'
-import me3 from '../../assets/BABY DISPLAY.png'
+import me3 from '../../assets/01.png'
 import me4 from '../../assets/Ms Ajax.png'
 import me5 from '../../assets/happy mothers day display 3.png'
 export const Portfolio = () => {
