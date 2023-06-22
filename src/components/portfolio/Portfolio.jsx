@@ -8,7 +8,7 @@ import './portfolio.css';
     useEffect(() =>{
 
       axios.get("https://izora-react-backend.cyclic.app/api/portfolio").then(response => {
-        const formattedData = response.data.data.map(item =>({
+        const formattedData = response.data.data.map(item => ({
           id:item._id,
           image: item.image,
           title: item.title,
