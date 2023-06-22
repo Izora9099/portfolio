@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import './portfolio.css';
-  const Portfolio = () => { 
-
-    const [data, setData] = useState([]);
-
-    useEffect(() =>{
-
-      axios.get("https://izora-react-backend.cyclic.app/api/portfolio").then(response => {
+const Portfolio = () => { 
+const [data, setData] = useState([]);
+useEffect(() =>{
+axios.get("https://izora-react-backend.cyclic.app/api/portfolio").then(response => {
         const formattedData = response.data.data.map(item => ({
           id:item._id,
           image: item.image,
@@ -15,12 +12,9 @@ import './portfolio.css';
           content: item.content,
           seemore: item.seemore
         }));
-        setData(formattedData)
-      }).catch(error=>{
+        setData(formattedData)}).catch(error=>{
         console.log("error fetching portfolio data", error);
-      })
-
-    }, [])
+      })}, [])
  
 
   return (
