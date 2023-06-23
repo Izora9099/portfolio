@@ -36,12 +36,12 @@ import axios from "axios";
       >
         {data.map((testi) => {
           return (
-            <SwiperSlide key={testi.id} className="testimonial">
+            <SwiperSlide key={testi._id} className="testimonial">
               <div className="client__avatar">
                 <img src={testi.avatar} alt="client avatar" />
               </div>
-              <h5 className="client__name"> {testi.Cname} </h5>
-              <small className="client__review"> {testi.testimonial} </small>
+              <h5 className="client__name"> {testi.name} </h5>
+              <small className="client__review"> {testi.review} </small>
             </SwiperSlide>
           );
         })}
