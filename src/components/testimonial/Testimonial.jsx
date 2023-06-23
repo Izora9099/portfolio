@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import axios from "axios";
   const Testimonials = () => {
-    const[data, setData] = useState([]);
+    const [data, setData] = useState([]);
     useEffect(() => {
       axios.get("https://izora-react-backend.cyclic.app/api/testimonial").then(res=> {
           const formmatedData = res.data.data.map(item => ({
