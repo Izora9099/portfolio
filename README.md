@@ -13,9 +13,9 @@
 
 
 => The backend is another repository because of some errors i encountered when trying to put it in this same repository
+https://github.com/Izora9099/Backend-portfolio
+
+=>Link for back-end hosting is below done with the cyclic online hosting service. 
+https://izora-react-backend.cyclic.app/api/testimonial
 
 
-=>The link will be included here in a short while
-
-
-=>My react app is slightly different from what the teacher presented to us
