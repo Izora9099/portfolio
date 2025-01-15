@@ -1,7 +1,7 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
-import {BsPinterest} from 'react-icons/bs'
+import {BsLinkedin, BsPinterest} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import { FaArrowDown} from 'react-icons/fa'
 import {useRef} from 'react'
@@ -27,16 +27,16 @@ return (
 <article className='contact__option'>
 <MdOutlineEmail className='contact__option__icon'/>
 <h4>Email</h4>
-<h5>izoragraphics@gmail.com</h5>
-<a href='mailto:izoragraphics@gmail.com' target='_blank'>send a
+<h5>ndifonlemuel@gmail.com</h5>
+<a href='mailto:ndifonlemuel@gmail.com' target='_blank'>send a
 message</a>
 </article>
 <article className='contact__option'>
-<BsPinterest className='contact__option__icon'/>
-<h4>Pinterest</h4>
+<BsLinkedin className='contact__option__icon'/>
+<h4>LinkedIn</h4>
 <h5>Profile</h5>
-<a href='https://pinterest.com/izoragraphics'
-target='_blank'>Connect with me on Pinterest</a>
+<a href='https://pinterest.com/ndifonlemuel'
+target='_blank'>Connect with me on LinkedIn</a>
 </article>
 <article className='contact__option'>
 <BsWhatsapp className='contact__option__icon'/>

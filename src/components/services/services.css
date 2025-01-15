@@ -42,9 +42,11 @@
   margin-bottom: 0.8rem;
 }
 
+
 .service__list-icon {
   color: var(--color-primary);
-  margin-top: 2px;
+  
+  
 }
 
 .service__list p {

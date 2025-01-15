@@ -20,21 +20,21 @@ const about = () => {
         <article className="about__card">
         <FaAward className='about__icon'/>
         <h5>Experience</h5>
-        <small>3+ Years Work</small>
+        <small>3+ experience</small>
         </article> 
         <article className="about__card">
         <FiUsers className='about__icon'/>
         <h5>Clients</h5>
-        <small>288+ Worldwide</small>
+        <small>20+ Locally</small>
         </article>
           <article className="about__card">
         <VscFolderLibrary className='about__icon'/>
         <h5>Projects</h5>
-        <small>30+ Completed</small>
+        <small>5+ Completed</small>
       </article> 
     </div>
     <p>
-    Hi, I'm Izora Quinn, a digital artist, content creator, and front/back-end web designer.
+    Hi, I'm Ndifon Lemuel, a digital artist, content creator, a front-end web designer and a UI/UX designer.
      I specialize in creating visually stunning & engaging content across various media,
       from digital art to web design. With a passion for creativity and a commitment
        to qualitythat exceed my clients' expectations. My portfolio 
