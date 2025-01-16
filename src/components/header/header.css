@@ -1,5 +1,5 @@
 header{
-  height: 85vh; 
+  height: 100vh; 
   padding-top: 2rem;
   overflow: hidden;
   padding: 8rem, 2rem;
@@ -16,6 +16,7 @@ header{
 }
 .intro{
  
+  
   padding-top: 10rem;
   justify-content: center;
   
@@ -26,7 +27,11 @@ header{
   gap: 1.2rem;
   justify-content: center;
 }
-
+.name{
+  color: #fba741;
+  font-style: '\f032';
+  font-size: 4rem;
+}
 .header__social{
   display: flex;
   flex-direction: column;
@@ -43,15 +48,15 @@ padding-bottom: 0;
   font-size: 2rem;
 }
 .my_image{
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
+  background: linear-gradient(rgb(251, 167, 65), transparent);
+  width: 30rem;
   height: 30rem;
     left: calc(
     0% - 11rem
   );
   margin-top: 2rem;
   margin-left: 20rem;
-  border-radius: 12rem 12rem 0 0;
+  border-radius: 30rem;
   overflow: hidden;
   padding: 0rem 1.5rem 1.5rem 1.5rem;
 }

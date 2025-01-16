@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import TypeWriterEffect from 'react-typewriter-effect';
 import './CTA'
 import CTA from './CTA' //here we import the CTA component inside our header
 import me from '../../assets/changer.png'
@@ -14,9 +15,30 @@ return (
     
        
 <h5>Hello I'm</h5>
-<h1>Lemuel</h1>
-<h5 className='text-light'>A Software Engineering student, graphic designer and web developer </h5>
+<h1 className='name'>Lemuel</h1>
+<TypeWriterEffect
+        textStyle={{
+        //   fontFamily: 'Red Hat Display',
+          color: '#fba741',
+          fontWeight: 500,
+          fontSize: '1.5em',
+        }}
+        startDelay={2000}
+        cursorColor="#fba741"
+        multiText={[
+          'A Software Engineering student,',
+          'graphic designer',
+          'web developer',
+          'UI designer',
+          'video editor',
+          'author',
+        ]}
+        multiTextDelay={1500}
+        typeSpeed={100}
+      />
 <CTA/>
+
+
     </div> 
 
 {/**<HeaderSocial/> */}

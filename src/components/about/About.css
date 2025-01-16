@@ -1,8 +1,16 @@
+#about{
+  height: 100vh;
+  padding-top: 0;
+  
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 10%;
+  padding-top: 1rem;
 }
+
 .about__me {
   width: 100%;
   aspect-ratio: 1/1;
