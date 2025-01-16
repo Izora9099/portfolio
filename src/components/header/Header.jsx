@@ -11,7 +11,7 @@ return (
 <header>
 <div className='container header__container'>
 <h5>Hello I'm</h5>
-<h1>Ndifon Lemuel</h1>
+<h1>Lemuel</h1>
 <h5 className='text-light'>A Software Engineering student, graphic designer and web developer </h5>
 <CTA/>
 

@@ -48,13 +48,13 @@ const Navbar = () => {
       >
         <TfiGallery />
       </a>
-      <a
+      {/*<a
         href='#testimonial'
         onClick={() => setActiveNav("#testimonial")}
         className={activeNav === "#testimonial" ? "active" : ""}
       >
         <BiMessageSquareDetail />
-      </a>
+      </a>*/}
 
       <a
         href='#contact'
