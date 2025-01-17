@@ -6,15 +6,15 @@ import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineBook } from "react-icons/ai";import { TfiGallery, TfiThemifyLogo } from "react-icons/tfi";
 import { useState } from "react";
 import { FaAddressCard } from "react-icons/fa";
-import me from '../../assets/Iz.svg'
+import me from '../../assets/Iz..png'
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { BiRocket } from "react-icons/bi";
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("/"); // Use paths instead of fragment identifiers
   return (
-    <nav>
+    <nav className='navbar'>
       <div className="Logo">
-      
+      Ndifon Lemuel
       </div>
 
       <div className="link">

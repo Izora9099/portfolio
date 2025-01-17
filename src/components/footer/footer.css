@@ -4,6 +4,9 @@
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
+  bottom: 0;
+  
+  width: 100vw;
 }
 
 .footer__logo {
