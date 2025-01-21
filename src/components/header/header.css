@@ -1,5 +1,5 @@
 header{
-  height: 100vh; 
+  height: auto; 
   padding-top: 2rem;
   overflow: hidden;
   padding: 8rem, 2rem;
@@ -9,7 +9,7 @@ header{
 
 .header__container{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 5fr 5fr;
   gap: 2rem;
   padding-top: 5rem;
 
@@ -28,34 +28,25 @@ header{
   justify-content: center;
 }
 .name{
-  color: #fba741;
   font-style: '\f032';
-  font-size: 4rem;
-}
-.header__social{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 4rem;
-padding-bottom: 0;
- margin-bottom: 0;
-}
-
-.header__social > a{
   font-size: 2rem;
 }
+
+.secondpart{
+  padding: 2rem 8rem;
+}
+.secondpart h2{
+  text-align: center;
+  align-self: center;
+}
 .my_image{
-  background: linear-gradient(rgb(251, 167, 65), transparent);
   width: 30rem;
   height: 30rem;
     left: calc(
     0% - 11rem
   );
   margin-top: 2rem;
-  margin-left: 20rem;
+  margin-left: 10rem;
   border-radius: 30rem;
   overflow: hidden;
   padding: 0rem 1.5rem 1.5rem 1.5rem;
@@ -68,6 +59,122 @@ padding-bottom: 0;
   font-weight: 0.9rem;
   font-size: 7rem;
 }
+
+#about{
+  height: 100vh;
+  padding-top: 0;
+  
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 10%;
+  padding-top: 1rem;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: center;
+}
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+.about__me-image:hover {
+  transform: rotate(0);
+}
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary--variant);
+  cursor: default;
+}
+.about__icon {
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about__card h5 {
+  font-size: 0.95rem;
+}
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+.about__content p {
+  margin: 2rem 0 1rem;
+  color: var(--color-light);
+}
+.btn1{
+  margin-left: 38%;
+  margin-top: 0;
+}
+.htext{
+color: #0CCAFD;
+  text-decoration: none;
+  font-style: normal;
+}
+@media screen and(max-width:1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+  h2{
+    padding-bottom: 0.5rem;
+  }
+}
+@media screen and(max-width:600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+  
+  h2{
+    padding-bottom: 0.5rem;
+  }
+}
+
 
 @media only screen and(max-width:1024px) {
   header{

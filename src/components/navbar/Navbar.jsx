@@ -33,7 +33,7 @@ const Navbar = () => {
           onClick={() => setActiveNav("/experience")}
           className={activeNav === "/experience" ? "active" : ""}
         >
-         
+    
           <div>Skills</div>
         </Link>
         <Link
@@ -41,7 +41,7 @@ const Navbar = () => {
           onClick={() => setActiveNav("/portfolio")}
           className={activeNav === "/portfolio" ? "active" : ""}
         >
-          
+      
           <div>Projects</div>
         </Link>
         <Link
