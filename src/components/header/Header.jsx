@@ -1,6 +1,7 @@
 import React from 'react'
 import './header.css'
 import TypeWriterEffect from 'react-typewriter-effect';
+import { motion } from "framer-motion";
 import './CTA'
 import CTA from './CTA' //here we import the CTA component inside our header
 import me from '../../assets/home.png'
@@ -72,7 +73,7 @@ return (
         
        
          
-    </div>
+ </div>
     <p>
    I am a junior UI/UX designer and a junior software developper.</p>
    <p>
@@ -80,10 +81,43 @@ return (
    and <i className='htext'>Java</i> for web development.
 </p>
 
+
    <p>For UI/UX design, I use technologies such as <i class="htext">Figma</i> and <i class="htext">Adobe XD</i>.</p> <p> For web development, I use <i class="htext">React Js.</i>  For android mobile development, I use <i class="htext">Android Studio.</i>  </p>
      <p>  I also dable in digital art and other forms of graphic 
       design using <i class="htext">Adobe Photoshop</i> and <i class="hext">Canva</i> </p>
    </div>
+   <div style={{ position: "relative", display: "inline-block" }}>
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          border: "2px solid transparent",
+          borderRadius: "8px",
+        }}
+        animate={{
+          pathLength: [0, 1, 0], // Loop around the button
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut", // Adjust easing for speed changes
+        }}
+      />
+      <button
+        style={{
+          padding: "10px 20px",
+          fontSize: "16px",
+          borderRadius: "8px",
+          position: "relative",
+          zIndex: 1,
+        }}
+      >
+        Animated Button
+      </button>
+    </div>
     </div>
       </section>
 </header>

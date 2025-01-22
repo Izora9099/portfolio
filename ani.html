@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Button Orbit</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #101010;
+        }
+
+        .button-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 2px; /* Spacing for orbit effect */
+            border-radius: 12px;
+            background: linear-gradient(90deg, #6c63ff, #3b82f6);
+            animation: pulse-border 3s infinite;
+        }
+
+        .button {
+            position: relative;
+            z-index: 1;
+            padding: 12px 28px;
+            font-size: 16px;
+            color: white;
+            background-color: #252525;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .button:hover {
+            background-color: #1f1f1f;
+        }
+
+        .orbit-circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .orbit-circle::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #facc15;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #facc15;
+            animation: orbiting 2s linear infinite;
+        }
+
+        @keyframes orbiting {
+            0% {
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            25% {
+                top: 50%;
+                left: 100%;
+                transform: translate(-50%, -50%);
+            }
+            50% {
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            75% {
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+            100% {
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @keyframes pulse-border {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-wrapper">
+        <div class="orbit-circle"></div>
+        <button class="button">
+            Click Me
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 3l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+        </button>
+    </div>
+</body>
+</html>
