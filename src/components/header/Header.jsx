@@ -7,9 +7,6 @@ import CTA from './CTA' //here we import the CTA component inside our header
 import me from '../../assets/home.png'
 import me1 from '../../assets/Miss Ajax Complete 1.png'
 
-import { FaAward } from 'react-icons/fa';
-import { FiUser } from 'react-icons/fi';
-import { VscFolderLibrary } from 'react-icons/vsc';
 export const Header = () => {
 return (
 <header>
@@ -23,7 +20,6 @@ return (
 <h5 className='name'>Hello. I'm <i class="htext">NDIFON LEMUEL</i></h5>
 <TypeWriterEffect
         textStyle={{
-        //   fontFamily: 'Red Hat Display',
           color: '#0CCAFD',
           fontWeight: 500,
           fontSize: '1.5em',
@@ -32,11 +28,11 @@ return (
         cursorColor="#0CCAFD"
         multiText={[
           'A Software Engineering student,',
-          'graphic designer',
-          'web developer',
+          'Graphic designer',
+          'Web developer',
           'UI designer',
-          'video editor',
-          'author',
+          'Video editor',
+          'Author',
         ]}
         multiTextDelay={1500}
         typeSpeed={100}
@@ -106,17 +102,7 @@ return (
           ease: "easeInOut", // Adjust easing for speed changes
         }}
       />
-      <button
-        style={{
-          padding: "10px 20px",
-          fontSize: "16px",
-          borderRadius: "8px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        Animated Button
-      </button>
+      
     </div>
     </div>
       </section>
