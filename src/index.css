@@ -7,6 +7,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  
 }
 :root {
   --color-bg: #181818;
@@ -14,6 +15,7 @@
   --color-primary: #f3f3f3;
  --color-primary-variant: #6d7885;
  --highlight-color: #0CCAFD;
+
   --color-white: #fff;
   --color-light: #969696;
   --container-width-lg: 75%; /*size of the container we are going to use on different*/
@@ -56,7 +58,7 @@ section {
 section > h2,
 section > h5 {
   text-align: center;
-  color: var(--color-light);
+  color: var(--highlight-color);
  
 }
 section > h2 {

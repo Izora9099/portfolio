@@ -62,6 +62,7 @@ return (
        <img src={me1} alt='my profile'/>
         </div>
       
+          
 
       </div>
       <div className="about__content">
@@ -80,7 +81,7 @@ return (
 
    <p>For UI/UX design, I use technologies such as <i class="htext">Figma</i> and <i class="htext">Adobe XD</i>.</p> <p> For web development, I use <i class="htext">React Js.</i>  For android mobile development, I use <i class="htext">Android Studio.</i>  </p>
      <p>  I also dable in digital art and other forms of graphic 
-      design using <i class="htext">Adobe Photoshop</i> and <i class="hext">Canva</i> </p>
+      design using <i class="htext">Adobe Photoshop</i> and <i class="htext">Canva</i> </p>
    </div>
    <div style={{ position: "relative", display: "inline-block" }}>
       <motion.div
