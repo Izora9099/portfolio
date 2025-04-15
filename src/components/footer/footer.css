@@ -1,10 +1,11 @@
 .footer__container {
-  background-color: var(--color-primary-variant);
+  background-color: var(--color-light);
   margin-top: 2rem;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
   width: 100vw;
+ 
 }
 
 .footer__logo {

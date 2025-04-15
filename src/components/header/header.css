@@ -127,7 +127,7 @@ header{
 }
 .about__content p {
   margin: 2rem 0 1rem;
-  color: var(--color-light);
+  color: var(--color-light-variant);
 }
 .btn1{
   margin-left: 38%;

@@ -55,14 +55,14 @@ return (
 
 <section id="about" class='about'>
     <h5>MAY I HAVE YOUR ATTENTION PLEASE! </h5>
-    <h2>About Me</h2>
+    <h2>My Intro</h2>
     <div className="container about__container">
       <div className="about__me">
        <div className="about__me-image">
        <img src={me1} alt='my profile'/>
         </div>
       
-          
+      
 
       </div>
       <div className="about__content">
@@ -73,38 +73,17 @@ return (
  </div>
     <p>
    I am a junior UI/UX designer and a junior software developper.</p>
-   <p>
+     <p>
    I use <i className='htext'>HTML, CSS, Javascript.</i> 
    and <i className='htext'>Java</i> for web development.
-</p>
+    </p>
 
 
    <p>For UI/UX design, I use technologies such as <i class="htext">Figma</i> and <i class="htext">Adobe XD</i>.</p> <p> For web development, I use <i class="htext">React Js.</i>  For android mobile development, I use <i class="htext">Android Studio.</i>  </p>
      <p>  I also dable in digital art and other forms of graphic 
       design using <i class="htext">Adobe Photoshop</i> and <i class="htext">Canva</i> </p>
    </div>
-   <div style={{ position: "relative", display: "inline-block" }}>
-      <motion.div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          border: "2px solid transparent",
-          borderRadius: "8px",
-        }}
-        animate={{
-          pathLength: [0, 1, 0], // Loop around the button
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut", // Adjust easing for speed changes
-        }}
-      />
-      
-    </div>
+   
     </div>
       </section>
 </header>

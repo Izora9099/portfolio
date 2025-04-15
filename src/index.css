@@ -17,7 +17,8 @@
  --highlight-color: #0CCAFD;
 
   --color-white: #fff;
-  --color-light: #969696;
+  --color-light: #0ccafd;
+  --color-light-variant: #969696;
   --container-width-lg: 75%; /*size of the container we are going to use on different*/
   --container-width-md: 86%; /*screen size*/
   --container-width-sm: 90%;
