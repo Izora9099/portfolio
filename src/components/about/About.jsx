@@ -29,11 +29,13 @@ const about = () => {
         <h5>Clients</h5>
         <small>20+ Locally</small>
         </article>
-          <article className="about__card">
+     <a href="portfolio" className="link-button">
+        <article className="about__card">
         <VscFolderLibrary className='about__icon'/>
         <h5>Projects</h5>
         <small>5+ Completed</small>
       </article> 
+      </a>
     </div>
     <p>
     Hi, I'm Ndifon Lemuel, a digital artist, content creator, a front-end web designer and a UI/UX designer.
