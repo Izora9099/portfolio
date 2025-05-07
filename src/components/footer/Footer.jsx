@@ -1,7 +1,5 @@
 import React from 'react'
-import {FaInstagramSquare} from 'react-icons/fa'
-import {BsBehance, BsPinterest} from 'react-icons/bs'
-import { FaTwitterSquare } from "react-icons/fa";
+import {BsBehance, BsGithub, BsPinterest} from 'react-icons/bs'
 import {SiDeviantart} from "react-icons/si"
 import {BsLinkedin} from "react-icons/bs"
 
@@ -10,17 +8,11 @@ const Footer = () => {
     return (
       <div className="footer__container">
         
-        <a href="#" className="footer__logo">
-
-          @ndifonlemuel
-          
-          </a>
-
-       
+        ndifonlemuel       
         
         <div className="footer__media">
         <a href="https://www.deviantart.com/izoraquinn" >
-            <SiDeviantart />
+            <BsGithub />
           </a>
           <a href="https://www.behance.net/ndifonlemuel" >
             <BsBehance/>

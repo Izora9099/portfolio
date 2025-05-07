@@ -4,38 +4,48 @@ import me from '../../assets/Miss Ajax Complete 1.png'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+//icon style and component imports
 const about = () => {
   return (
    <section id="about" class='about'>
-    <h5>Get To Know</h5>
-    <h2>About Me</h2>
-    <div className="container about__container">
-      <div className="about__me">
-       <div className="about__me-image">
-       <img src={me} alt='my profile'/>
-        </div>
-      
 
-      </div>
-      <div className="about__content">
-        <div className="about__cards">
-        <article className="about__card">
-        <FaAward className='about__icon'/>
-        <h5>Experience</h5>
-        <small>3+ experience</small>
-        </article> 
-        <article className="about__card">
-        <FiUsers className='about__icon'/>
-        <h5>Clients</h5>
-        <small>20+ Locally</small>
-        </article>
-     <a href="portfolio" className="link-button">
-        <article className="about__card">
-        <VscFolderLibrary className='about__icon'/>
-        <h5>Projects</h5>
-        <small>5+ Completed</small>
-      </article> 
-      </a>
+    <h5>Get To Know</h5>
+      <h2>About Me</h2>
+        <div className="container about__container">
+          <div className="about__me">
+            <div className="about__me-image">
+              <img src={me} alt='my profile'/>
+            </div>
+          </div>
+          <div className="about__content">
+            <div className="about__cards">
+
+{/*below are cards which are clickable and they take you to the specific page. the card is a border around the text, the heading and an icon*/}
+                <a href="experience" className="link-button"> 
+                  <article className="about__card">
+                    <FaAward className='about__icon'/>
+                      <h5>Experience</h5>
+                        <small>3+ experience</small>
+                  </article> 
+                </a>
+
+                <a href="testimonials" className="link-button">
+                  <article className="about__card">
+                     <FiUsers className='about__icon'/>
+                        <h5>Clients</h5>
+                          <small small>20+ Locally</small>
+                  </article>
+                </a>
+
+              <a href="portfolio" className="link-button">
+                  <article className="about__card">
+                  <VscFolderLibrary className='about__icon'/>
+                  <h5>Projects</h5>
+                  <small>5+ Completed</small>
+                </article> 
+                </a>
+
+
     </div>
     <p>
     Hi, I'm Ndifon Lemuel, a digital artist, content creator, a front-end web designer and a UI/UX designer.

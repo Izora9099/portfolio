@@ -18,6 +18,7 @@ function App() {
                 <Router>
                 <Navbar /> {/* Always visible */}
                 <Routes>
+                    {/*here, routes are used for navigation in the website. this ensures that when you click on the navbar, it takees you to where you need to go*/}
                     <Route path="/" element={<Header />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/experience" element={<Experience />} />

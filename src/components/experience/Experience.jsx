@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import {BsFiletypeHtml, BsFiletypeJava, BsGit, BsGithub, BsPatchCheckFill, BsUiChecks, BsUiRadios} from "react-icons/bs";
+import {BsFiletypeHtml, BsFiletypeJava, BsGit, BsGithub, BsPatchCheckFill, BsUiChecks, BsUiRadios, BsWindowFullscreen} from "react-icons/bs";
 import { FaCss3, FaHtml5, FaJava, FaPallet, FaReact, FaUikit, FaVideo } from "react-icons/fa";
 import { MdArtTrack, MdColorLens, MdDesignServices, MdGraphicEq, MdJavascript, MdOutlineDesignServices, MdPallet, MdVideoLabel, MdVideoLibrary, MdWeb, MdWebAsset, MdWebStories } from "react-icons/md";
 import { SiAdobe, SiAdobephotoshop, SiAdobepremierepro, SiAndroidstudio, SiArtstation, SiCanva, SiDesignernews, SiDigitalocean, SiFigma, SiFirebase, SiJavascript, SiUikit, SiVisualstudiocode, SiWritedotas } from "react-icons/si";
@@ -197,6 +197,7 @@ const experience = () => {
                 <small className='text-light'>Competent</small>
               </article>
             </div>
+
             <div>
               <article className='experience__details'>
                 <SiVisualstudiocode className='experience__details-icon'/>
@@ -204,6 +205,15 @@ const experience = () => {
                 <small className='text-light'>Competent</small>
               </article>
             </div>
+
+            <div>
+              <article className='experience__details'>
+                <BsWindowFullscreen className='experience__details-icon'/>
+                <h4>Windsurf</h4>
+                <small className='text-light'>Amateur</small>
+              </article>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import TypeWriterEffect from 'react-typewriter-effect';
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 import './CTA'
 import CTA from './CTA' //here we import the CTA component inside our header
 import me from '../../assets/home.png'
@@ -14,7 +14,7 @@ return (
 <div className='intro'>
   
 
-    
+  {/*below is the typewriter text effect which I used in the home page of the website.*/}
        
 
 <h5 className='name'>Hello. I'm <i class="htext">NDIFON LEMUEL</i></h5>
