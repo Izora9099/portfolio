@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import appwriteService from '../../appwrite/appwriteService';
 import "./services.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 

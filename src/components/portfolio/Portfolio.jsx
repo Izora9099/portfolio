@@ -1,23 +1,27 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
+import appwriteService from '../../appwrite/appwriteService';
 import axios from 'axios';
 import './portfolio.css';
+
 const Portfolio = () => { 
-const [data, setData] = useState([]);
-useEffect(() => {
-axios.get("https://izora-react-backend.cyclic.app/api/portfolio").then(response => {
-        const formattedData = response.data.data.map(item => ({
-          id:item._id,
-          image: item.image,
-          title:item.title,
-          content:item.content,
-          seemore:item.seemore
-        }));
-        setData(formattedData)
-      }).catch(error=> {
-        console.log("error fetching portfolio data", error);
-      } )
-    }, []);
-   return (
+  const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    axios.get("https://izora-react-backend.cyclic.app/api/portfolio").then(response => {
+      const formattedData = response.data.data.map(item => ({
+        id: item._id,
+        image: item.image,
+        title: item.title,
+        content: item.content,
+        seemore: item.seemore
+      }));
+      setData(formattedData);
+    }).catch(error => {
+      console.log("error fetching portfolio data", error);
+    });
+  }, []);
+
+  return (
     <section id='portfolio'>
       <h5>My recent work</h5>
       <h2>Portfolio</h2>

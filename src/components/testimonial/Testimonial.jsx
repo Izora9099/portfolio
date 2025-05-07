@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import appwriteService from '../../appwrite/appwriteService';
 import "./testimonial.css";
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';

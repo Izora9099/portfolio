@@ -1,4 +1,5 @@
 import React from 'react'
+import appwriteService from '../../appwrite/appwriteService'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {BsLinkedin, BsPinterest} from 'react-icons/bs'
