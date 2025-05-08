@@ -21,6 +21,7 @@ export class AppwriteService {
             );
             return account;
         } catch (error) {
+            console.error('Error creating account:', error);
             throw error;
         }
     }
@@ -29,6 +30,7 @@ export class AppwriteService {
         try {
             return await this.account.createEmailSession(email, password);
         } catch (error) {
+            console.error('Error logging in:', error);
             throw error;
         }
     }
@@ -37,7 +39,7 @@ export class AppwriteService {
         try {
             return await this.account.get();
         } catch (error) {
-            console.log('Error getting current user:', error);
+            console.error('Error getting current user:', error);
             return null;
         }
     }
@@ -46,11 +48,12 @@ export class AppwriteService {
         try {
             return await this.account.deleteSession('current');
         } catch (error) {
+            console.error('Error logging out:', error);
             throw error;
         }
     }
 
-    // Database methods - customize these based on your needs
+    // Database methods
     async createDocument(databaseId, collectionId, data) {
         try {
             return await this.databases.createDocument(
@@ -60,6 +63,7 @@ export class AppwriteService {
                 data
             );
         } catch (error) {
+            console.error('Error creating document:', error);
             throw error;
         }
     }
@@ -68,6 +72,7 @@ export class AppwriteService {
         try {
             return await this.databases.listDocuments(databaseId, collectionId);
         } catch (error) {
+            console.error('Error listing documents:', error);
             throw error;
         }
     }

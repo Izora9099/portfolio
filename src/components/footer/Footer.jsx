@@ -1,18 +1,17 @@
 import React from 'react'
 import {BsBehance, BsGithub, BsPinterest} from 'react-icons/bs'
-import {SiDeviantart} from "react-icons/si"
 import {BsLinkedin} from "react-icons/bs"
 
 import './footer.css'
 const Footer = () => {
     return (
-      <div className="footer__container">
-        
-        ndifonlemuel       
-        
+      <div className="footer__container">   
+         <div className="copyRight">
+        <h3>Designed and Developed by NDIFON LEMUEL &copy; 2023</h3>
+        </div>
         <div className="footer__media">
-        <a href="https://www.deviantart.com/izoraquinn" >
-            <BsGithub />
+        <a href="https://github.com/Izora9099" >
+            <BsGithub/>
           </a>
           <a href="https://www.behance.net/ndifonlemuel" >
             <BsBehance/>
@@ -25,10 +24,7 @@ const Footer = () => {
           </a>
 
         </div>
-        <div className="copyRight">
-        <h3>&copy; 2023 ndifonlemuel. All rights reserved.</h3>
-        </div>
-      
+       
       </div>
     );
 }
