@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import appwriteService from '../../appwrite/appwriteService';
+import LoadingSpinner from '../common/LoadingSpinner';
 import "./testimonial.css";
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -30,15 +31,22 @@ const StarRating = ({ rating }) => {
 
 const Testimonials = () => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
-         const response = await appwriteService.listDocuments('681c086300399ca68598', '681c0c6900322cf134e3');
+        setIsLoading(true);
+        setError(null);
+        const response = await appwriteService.listDocuments('681c086300399ca68598', '681c0c6900322cf134e3');
         const testimonials = response.documents.filter(doc => doc.approved);
         setData(testimonials);
       } catch (error) {
         console.error('Error fetching testimonials:', error);
+        setError('Failed to load testimonials. Please try again later.');
+      } finally {
+        setIsLoading(false);
       }
     };
 
@@ -52,6 +60,36 @@ const Testimonials = () => {
       day: 'numeric'
     });
   };
+
+  if (isLoading) {
+    return (
+      <section id="testimonial">
+        <h5>Review from clients</h5>
+        <h2>Testimonials</h2>
+        <LoadingSpinner />
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="testimonial">
+        <h5>Review from clients</h5>
+        <h2>Testimonials</h2>
+        <div className="error-message">{error}</div>
+      </section>
+    );
+  }
+
+  if (data.length === 0) {
+    return (
+      <section id="testimonial">
+        <h5>Review from clients</h5>
+        <h2>Testimonials</h2>
+        <p className="no-testimonials">No testimonials available yet.</p>
+      </section>
+    );
+  }
 
   return (
     <section id="testimonial">

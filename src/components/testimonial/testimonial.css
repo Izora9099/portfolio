@@ -24,7 +24,7 @@
     color: var(--color-light);
     font-weight: 300;
     width: 80%;
-    margin: 0.8rem auto;
+    margin: 0.8rem auto 0;
     display: block;
 }
 
