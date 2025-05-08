@@ -7,8 +7,9 @@ const Navbar = () => {
   const [activeNav, setActiveNav] = useState("/"); // Use paths instead of fragment identifiers
   return (
     <nav className='navbar'>
-      <div className="Logo">
-      Ndifon Lemuel
+      <div className="logo">
+        <img src="/favicon.svg" alt="Ndifon Lemuel" />
+        <span>Ndifon Lemuel</span>
       </div>
 
       <div className="link">

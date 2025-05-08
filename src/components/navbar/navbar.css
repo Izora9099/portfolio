@@ -39,6 +39,24 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 2rem;
+    width: auto;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
 nav a:hover {
  transform: scale(1.1);
  color: var(--highlight-color);
