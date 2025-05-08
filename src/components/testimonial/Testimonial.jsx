@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import appwriteService from '../../appwrite/appwriteService';
 import LoadingSpinner from '../common/LoadingSpinner';
+import TestimonialForm from './TestimonialForm';
 import "./testimonial.css";
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -33,23 +34,24 @@ const Testimonials = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+
+  const fetchTestimonials = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      const response = await appwriteService.listDocuments('681c086300399ca68598', '681c0c6900322cf134e3');
+      const testimonials = response.documents.filter(doc => doc.approved);
+      setData(testimonials);
+    } catch (error) {
+      console.error('Error fetching testimonials:', error);
+      setError('Failed to load testimonials. Please try again later.');
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const fetchTestimonials = async () => {
-      try {
-        setIsLoading(true);
-        setError(null);
-        const response = await appwriteService.listDocuments('681c086300399ca68598', '681c0c6900322cf134e3');
-        const testimonials = response.documents.filter(doc => doc.approved);
-        setData(testimonials);
-      } catch (error) {
-        console.error('Error fetching testimonials:', error);
-        setError('Failed to load testimonials. Please try again later.');
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
     fetchTestimonials();
   }, []);
 
@@ -96,6 +98,24 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
+      <button 
+        className="add-testimonial-button" 
+        onClick={() => setShowForm(true)}
+        title="Add Your Review"
+      >
+        +
+      </button>
+
+      {showForm && (
+        <TestimonialForm 
+          onClose={() => setShowForm(false)}
+          onSubmitSuccess={() => {
+            // Optionally refresh the testimonials list
+            fetchTestimonials();
+          }}
+        />
+      )}
+
       <Swiper
         className="container testimonials__container"
         modules={[Pagination, Navigation, Scrollbar, A11y]}
@@ -125,7 +145,7 @@ const Testimonials = () => {
               </div>
               <h5 className="client__name">{testi.name}</h5>
               <StarRating rating={testi.rating} />
-              <small className="client__review">{testi.message}</small>
+              <p className="client__review">{testi.message}</p>
               <p className="review-date">Posted on {formatDate(testi.createdAt)}</p>
             </SwiperSlide>
           );
