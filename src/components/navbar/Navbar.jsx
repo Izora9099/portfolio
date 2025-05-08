@@ -1,73 +1,61 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 import "./navbar.css";
-import { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
 const Navbar = () => {
-  const [activeNav, setActiveNav] = useState("/"); // Use paths instead of fragment identifiers
+
   return (
     <nav className='navbar'>
       <div className="logo">
-        <img src="/favicon.svg" alt="Ndifon Lemuel" />
-        <span>Ndifon Lemuel</span>
+        <NavLink to="/">
+          <img src="/favicon.svg" alt="Ndifon Lemuel" />
+          <span>Ndifon Lemuel</span>
+        </NavLink>
       </div>
 
       <div className="link">
-        <Link
+        <NavLink
           to="/"
-          onClick={() => setActiveNav("/")}
-          className={activeNav === "/" ? "active" : ""}
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-          
-          <div>Home</div>
-        </Link>
-        <Link
+          Home
+        </NavLink>
+        <NavLink
           to="/about"
-          onClick={() => setActiveNav("/about")}
-          className={activeNav === "/about" ? "active" : ""}
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-          
-          <div>About</div>
-        </Link>
-        <Link
+          About
+        </NavLink>
+        <NavLink
           to="/experience"
-          onClick={() => setActiveNav("/experience")}
-          className={activeNav === "/experience" ? "active" : ""}
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-    
-          <div>Skills</div>
-        </Link>
-        <Link
+          Skills
+        </NavLink>
+        <NavLink
           to="/portfolio"
-          onClick={() => setActiveNav("/portfolio")}
-          className={activeNav === "/portfolio" ? "active" : ""}
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-      
-          <div>Projects</div>
-        </Link>
-        
-        <Link
-        to="/testimonial"
-        onClick={() => setActiveNav("/testimonial")}
-        className={activeNav === "/testimonial" ? "active" : ""}
+          Portfolio
+        </NavLink>
+        <NavLink
+          to="/testimonial"
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-          <div>Testimonial</div>
-          </Link>
-          <Link
-        to="/services"
-        onClick={() => setActiveNav("/services")}
-        className={activeNav === "/services" ? "active" : ""}
+          Testimonials
+        </NavLink>
+        <NavLink
+          to="/services"
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-          <div>Services</div>
-          </Link>
-        <Link
+          Services
+        </NavLink>
+        <NavLink
           to="/contact"
-          onClick={() => setActiveNav("/contact")}
-          className={activeNav === "/contact" ? "active" : ""}
+          className={({ isActive }) => isActive ? "active" : ""}
         >
-         
-          <div>Contact</div>
-        </Link>
+          Contact
+        </NavLink>
       </div>
     </nav>
   );

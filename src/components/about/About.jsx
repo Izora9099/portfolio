@@ -54,7 +54,7 @@ const about = () => {
        to qualitythat exceed my clients' expectations. My portfolio 
        showcases my diverse skillset, and I look forward to the opportunity to work with you.
        </p>
-    <a href="#contact" className='btn btn-primary btn1'>Let's Talk</a>
+    <a href="contact" className='btn btn-primary btn1'>Let's Talk</a>
     </div>
     </div>
       </section>
