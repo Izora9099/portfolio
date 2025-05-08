@@ -13,7 +13,7 @@ const Portfolio = () => {
       try {
         setIsLoading(true);
         setError(null);
-        const response = await appwriteService.listDocuments('681c086300399ca68598', '681c08a2c05a6f8dfa54');
+        const response = await appwriteService.listDocuments('681c086300399ca68598', '681c087e0031be6c71f1');
         const formattedData = response.documents.map(item => ({
           id: item.$id,
           image: item.image,
