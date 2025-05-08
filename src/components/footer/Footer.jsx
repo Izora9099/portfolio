@@ -19,7 +19,7 @@ const Footer = () => {
           <a href="https://pinterest.com/izoragraphics" >
             <BsPinterest />
           </a>
-          <a href="https://twitter.com/izoragraphics" >
+          <a href="https://www.linkedin.com/in/ndifon-lemuel-ashu-mbi-0a2264244/" >
             <BsLinkedin/>
           </a>
 
