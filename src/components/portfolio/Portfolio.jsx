@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import appwriteService from '../../appwrite/appwriteService';
+import LoadingSpinner from '../common/LoadingSpinner';
 import './portfolio.css';
 
 const Portfolio = () => { 
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
+        setIsLoading(true);
+        setError(null);
         const response = await appwriteService.listDocuments('681c086300399ca68598', '681c08a2c05a6f8dfa54');
         const formattedData = response.documents.map(item => ({
           id: item.$id,
@@ -19,11 +24,34 @@ const Portfolio = () => {
         setData(formattedData);
       } catch (error) {
         console.error('Error fetching portfolio data:', error);
+        setError('Failed to load portfolio items. Please try again later.');
+      } finally {
+        setIsLoading(false);
       }
     };
 
     fetchPortfolio();
   }, []);
+
+  if (isLoading) {
+    return (
+      <section id='portfolio'>
+        <h5>My recent work</h5>
+        <h2>Portfolio</h2>
+        <LoadingSpinner />
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id='portfolio'>
+        <h5>My recent work</h5>
+        <h2>Portfolio</h2>
+        <div className="error-message">{error}</div>
+      </section>
+    );
+  }
 
   return (
     <section id='portfolio'>
