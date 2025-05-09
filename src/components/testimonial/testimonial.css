@@ -212,6 +212,12 @@
         width: var(--container--width-sm);
     }
 
+    .testimonial
+    {
+        width: 60%;
+       
+    }
+
     .star-rating {
         gap: 0.3rem;
     }
