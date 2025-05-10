@@ -75,7 +75,7 @@ return (
    I am a junior UI/UX designer and a junior software developper.</p>
      <p>
    I use <i className='htext'>HTML, CSS, Javascript.</i> 
-   and <i className='htext'>Java</i> for web development.
+   and <i className='htext'>React.js</i> for web development.
     </p>
 
 
