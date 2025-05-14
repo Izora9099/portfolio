@@ -36,13 +36,13 @@ message</a>
 <BsLinkedin className='contact__option__icon'/>
 <h4>LinkedIn</h4>
 <h5>Profile</h5>
-<a href='https://pinterest.com/ndifonlemuel'
+<a href='https://www.linkedin.com/in/ndifon-lemuel-ashu-mbi-0a2264244/'
 target='_blank'>Connect with me on LinkedIn</a>
 </article>
 <article className='contact__option'>
 <BsWhatsapp className='contact__option__icon'/>
 <h4>WhatsApp</h4>
-<h5>Directly message</h5>
+<h5>Directly message Me</h5>
 <a href='https://web.whatsapp.com/send?phone=+237658908619'
 target='_blank'>Whatsapp me</a>
 </article>

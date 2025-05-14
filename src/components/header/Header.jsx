@@ -58,13 +58,16 @@ return (
     <h2>My Intro</h2>
     <div className="container about__container">
       <div className="about__me">
-       <div className="about__me-image">
-       <img src={me1} alt='my profile'/>
-        </div>
+            <div className="about__me-image">
+                  <img src={me1} alt='my profile'/>
+           </div>
       
       
 
       </div>
+
+
+
       <div className="about__content">
         <div className="about__cards">
         
@@ -74,14 +77,13 @@ return (
     <p>
    I am a junior UI/UX designer and a junior software developper.</p>
      <p>
-   I use <i className='htext'>HTML, CSS, Javascript.</i> 
-   and <i className='htext'>React.js</i> for web development.
-    </p>
 
+        I am a front-end developper who is passionate about <i className="hex">design</i> and creating visually appealing and engaging user experiences
 
-   <p>For UI/UX design, I use technologies such as <i class="htext">Figma</i> and <i class="htext">Adobe XD</i>.</p> <p> For web development, I use <i class="htext">React Js.</i>  For android mobile development, I use <i class="htext">Android Studio.</i>  </p>
+  </p>
+  
      <p>  I also dable in digital art and other forms of graphic 
-      design using <i class="htext">Adobe Photoshop</i> and <i class="htext">Canva</i> </p>
+      design using <i class="htext">Adobe Photoshop</i></p>
    </div>
    
     </div>

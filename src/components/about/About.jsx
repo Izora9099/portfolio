@@ -25,7 +25,7 @@ const about = () => {
                   <article className="about__card">
                     <FaAward className='about__icon'/>
                       <h5>Experience</h5>
-                        <small>3+ experience</small>
+                        <small>4+ experience</small>
                   </article> 
                 </a>
 
@@ -51,7 +51,7 @@ const about = () => {
     Hi, I'm Ndifon Lemuel, a digital artist, content creator, a front-end web designer and a UI/UX designer.
      I specialize in creating visually stunning & engaging content across various media,
       from digital art to web design. With a passion for creativity and a commitment
-       to qualitythat exceed my clients' expectations. My portfolio 
+       to quality that exceeds my clients' expectations. My portfolio 
        showcases my diverse skillset, and I look forward to the opportunity to work with you.
        </p>
     <a href="contact" className='btn btn-primary btn1'>Let's Talk</a>
