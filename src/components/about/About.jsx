@@ -29,7 +29,7 @@ const about = () => {
                   </article> 
                 </a>
 
-                <a href="testimonials" className="link-button">
+                <a href="testimonial" className="link-button">
                   <article className="about__card">
                      <FiUsers className='about__icon'/>
                         <h5>Clients</h5>

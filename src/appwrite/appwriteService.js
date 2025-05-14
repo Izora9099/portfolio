@@ -1,34 +1,15 @@
-import { Account, Databases, ID } from 'appwrite';
-import client from './config';
+import { ID } from 'appwrite';
+import { account, databases } from './config';
 
 export class AppwriteService {
-    account;
-    databases;
-
-    constructor() {
-        this.account = new Account(client);
-        this.databases = new Databases(client);
-    }
+    databaseId = '681c086300399ca68598';
+    projectsCollectionId = '681c0c6900322cf134e3';
+    testimonialsCollectionId = '681c0c6900322cf134e3';
 
     // Authentication methods
-    async createAccount({ email, password, name }) {
-        try {
-            const account = await this.account.create(
-                ID.unique(),
-                email,
-                password,
-                name
-            );
-            return account;
-        } catch (error) {
-            console.error('Error creating account:', error);
-            throw error;
-        }
-    }
-
     async login({ email, password }) {
         try {
-            return await this.account.createEmailSession(email, password);
+            return await account.createEmailSession(email, password);
         } catch (error) {
             console.error('Error logging in:', error);
             throw error;
@@ -49,6 +30,124 @@ export class AppwriteService {
             return await this.account.deleteSession('current');
         } catch (error) {
             console.error('Error logging out:', error);
+            throw error;
+        }
+    }
+
+    // Project methods
+    async createProject(data) {
+        try {
+            return await databases.createDocument(
+                this.databaseId,
+                this.projectsCollectionId,
+                ID.unique(),
+                data
+            );
+        } catch (error) {
+            console.error('Error creating project:', error);
+            throw error;
+        }
+    }
+
+    async updateProject(projectId, data) {
+        try {
+            return await databases.updateDocument(
+                this.databaseId,
+                this.projectsCollectionId,
+                projectId,
+                data
+            );
+        } catch (error) {
+            console.error('Error updating project:', error);
+            throw error;
+        }
+    }
+
+    async deleteProject(projectId) {
+        try {
+            return await databases.deleteDocument(
+                this.databaseId,
+                this.projectsCollectionId,
+                projectId
+            );
+        } catch (error) {
+            console.error('Error deleting project:', error);
+            throw error;
+        }
+    }
+
+    async listProjects() {
+        try {
+            return await databases.listDocuments(
+                this.databaseId,
+                this.projectsCollectionId
+            );
+        } catch (error) {
+            console.error('Error listing projects:', error);
+            throw error;
+        }
+    }
+
+    // Testimonial methods
+    async createTestimonial(data) {
+        try {
+            return await databases.createDocument(
+                this.databaseId,
+                this.testimonialsCollectionId,
+                ID.unique(),
+                {
+                    ...data,
+                    approved: false,
+                    createdAt: new Date().toISOString()
+                }
+            );
+        } catch (error) {
+            console.error('Error creating testimonial:', error);
+            throw error;
+        }
+    }
+
+    async updateTestimonial(testimonialId, data) {
+        try {
+            return await databases.updateDocument(
+                this.databaseId,
+                this.testimonialsCollectionId,
+                testimonialId,
+                data
+            );
+        } catch (error) {
+            console.error('Error updating testimonial:', error);
+            throw error;
+        }
+    }
+
+    async approveTestimonial(testimonialId) {
+        try {
+            return await this.updateTestimonial(testimonialId, {
+                approved: true,
+                modifiedAt: new Date().toISOString()
+            });
+        } catch (error) {
+            console.error('Error approving testimonial:', error);
+            throw error;
+        }
+    }
+
+    async listTestimonials(onlyApproved = false) {
+        try {
+            const testimonials = await databases.listDocuments(
+                this.databaseId,
+                this.testimonialsCollectionId
+            );
+            if (onlyApproved) {
+                return {
+                    ...testimonials,
+                    documents: testimonials.documents.filter(doc => doc.approved)
+                };
+            }
+            return testimonials;
+        } catch (error) {
+            console.error('Error listing testimonials:', error);
             throw error;
         }
     }
