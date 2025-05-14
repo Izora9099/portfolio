@@ -47,17 +47,13 @@ const Portfolio = () => {
   if (error) {
     return (
       <section id='portfolio'>
-        <h5>My recent work</h5>
+        <h5>My Completed Work</h5>
         <h2>Portfolio</h2>
         <div className="error-message">{error}</div>
       </section>
     );
   }
 
-  /*
-  for getting the imageURL, just navigate to the file in the bucket in appwrite and copy and paste, simple
-  
-  */
   return (
     <section id='portfolio'>
       <h5>My recent work</h5>

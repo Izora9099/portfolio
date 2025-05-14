@@ -1,15 +1,23 @@
-import { ID } from 'appwrite';
-import { account, databases } from './config';
+import { Account, Databases, ID } from 'appwrite';
+import client from './config';
 
 export class AppwriteService {
+    account;
+    databases;
     databaseId = '681c086300399ca68598';
     projectsCollectionId = '681c0c6900322cf134e3';
     testimonialsCollectionId = '681c0c6900322cf134e3';
 
+    constructor() {
+        this.account = new Account(client);
+        this.databases = new Databases(client);
+    }
+
     // Authentication methods
     async login({ email, password }) {
         try {
-            return await account.createEmailSession(email, password);
+            const session = await this.account.createSession(email, password);
+            return session;
         } catch (error) {
             console.error('Error logging in:', error);
             throw error;
@@ -37,7 +45,7 @@ export class AppwriteService {
     // Project methods
     async createProject(data) {
         try {
-            return await databases.createDocument(
+            return await this.databases.createDocument(
                 this.databaseId,
                 this.projectsCollectionId,
                 ID.unique(),
@@ -51,7 +59,7 @@ export class AppwriteService {
 
     async updateProject(projectId, data) {
         try {
-            return await databases.updateDocument(
+            return await this.databases.updateDocument(
                 this.databaseId,
                 this.projectsCollectionId,
                 projectId,
@@ -65,7 +73,7 @@ export class AppwriteService {
 
     async deleteProject(projectId) {
         try {
-            return await databases.deleteDocument(
+            return await this.databases.deleteDocument(
                 this.databaseId,
                 this.projectsCollectionId,
                 projectId
@@ -78,7 +86,7 @@ export class AppwriteService {
 
     async listProjects() {
         try {
-            return await databases.listDocuments(
+            return await this.databases.listDocuments(
                 this.databaseId,
                 this.projectsCollectionId
             );
@@ -91,7 +99,7 @@ export class AppwriteService {
     // Testimonial methods
     async createTestimonial(data) {
         try {
-            return await databases.createDocument(
+            return await this.databases.createDocument(
                 this.databaseId,
                 this.testimonialsCollectionId,
                 ID.unique(),
@@ -109,7 +117,7 @@ export class AppwriteService {
 
     async updateTestimonial(testimonialId, data) {
         try {
-            return await databases.updateDocument(
+            return await this.databases.updateDocument(
                 this.databaseId,
                 this.testimonialsCollectionId,
                 testimonialId,
@@ -135,7 +143,7 @@ export class AppwriteService {
 
     async listTestimonials(onlyApproved = false) {
         try {
-            const testimonials = await databases.listDocuments(
+            const testimonials = await this.databases.listDocuments(
                 this.databaseId,
                 this.testimonialsCollectionId
             );
