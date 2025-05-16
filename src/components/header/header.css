@@ -3,8 +3,6 @@ header{
   padding-top: 2rem;
   overflow: hidden;
   padding: 8rem, 2rem;
-  
-
 }
 
 .header__container{
@@ -60,22 +58,17 @@ header{
   font-size: 7rem;
 }
 
-#about{
-  height: 100vh;
-  padding-top: 0;
-  
-}
 
 .about__container {
   display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 10%;
+  grid-template-columns: 20% 70%;
+  gap: 0%;
   padding-top: 1rem;
 }
 
-.about__me {
+.about__me1 {
   width: 50%;
-  aspect-ratio: 8/5;
+  aspect-ratio: 0/1;
   border-radius: 2rem;
   background: linear-gradient(
     60deg,

@@ -57,7 +57,7 @@ return (
     <h5>MAY I HAVE YOUR ATTENTION PLEASE! </h5>
     <h2>My Intro</h2>
     <div className="container about__container">
-      <div className="about__me">
+      <div className="about__me1">
             <div className="about__me-image">
                   <img src={me1} alt='my profile'/>
            </div>
